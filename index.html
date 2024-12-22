@@ -13,10 +13,10 @@
             <div class="name">/</div>
             <div class="name">陳立欣</div>
         </div>
-        <div class="all" style="min-height: 900px;">
-        <div class="sitebar">
+        <div class="all" style="min-height: 900px; padding-right: 100px;">
+        <div class="sitebar" style="min-width: 400px;">
             <div class="userphoto">
-                <img src="./image3.png" style="width:100%;" ="image">
+                <img src="./image3.png" style="width:100%;" >
             </div>
             <div class="name">陳立欣</div>
             <div>
@@ -29,7 +29,7 @@
 
         <div class="main.content" style="margin-left: 30px;">
 
-            <div style="margin-top:20px; ">
+            <div style="margin-top:20px;">
                 <button id="btn1" onclick="doSection1()" class="activeBtn">申請問答 Q & A</button>
                 <button id="btn2" onclick="doSection2()" class="nonActiveBtn">個人履歷 Resume</button>
                 <button id="btn3" onclick="doSection3()" class="nonActiveBtn">自我介紹 Video</button>
@@ -37,62 +37,78 @@
 
 
             <div id="section1">
-            <h3 >申請問答 Q & A</h3>
             <ul>
-                <li>個人簡介和申請動機</li>
-                    <div class="content">待更新</div>
-                <li>曾經做過哪些軟體工程技術相關的學習</li>
-                    <div class="content">待更新</div>
-                    <a href="https://drive.google.com/file/d/1otF2FOu3tD2_c8K4CPRUtD5Zy-jgGQ9Y/view?usp=sharing">AWS修課證明</a>
-                <li>如果參與這個訓練，會怎麼安排學習時間？</li>
-                    <div class="content">待更新</div>
-                    <table style="width:50%">
-                        <tr>
-                            <th style="width:10%">星期</th>
-                            <th style="width:10%">時段</th>
-                            <th>事項</th>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>1</td>
-                            <td>1</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>1</td>
-                            <td>1</td>
-                        </tr>
-                    </table>
-                <li>軟體技術日新月異，如何確定選擇投入的領域是正確有回報的？</li>
-                <div class="content">待更新</div>
-                <li>請描述一件產生明顯負面情緒的經歷，如何處理該情緒？</li>
-                <div class="content">待更新</div>
-                <li>關於這份申請網頁，分享一個開發時的技術心得。</li>
-                <div class="content">待更新</div>
-                <li>如何看待自身工作和整個社會群體的連結關係？</li>
-                <div class="content">待更新</div>
-                <li>從上次提出申請至今，多做了哪些努力？( 第一次申請不用回答 )</li>
-                <div class="content">待更新</div>
-                <li>其他想要對我們說的事情？</li>
-                <div class="content">待更新</div>
+                <li class="question">個人簡介和申請動機</li>
+                    <div class="content">
+                    <p>    您好，我是陳立欣，曾就職於會計師事務所及半導體公司，期間分別擔任審計員與會計人員，具有帳務處理、財務報表編制及查核、稅務申報及內部控制查核等相關工作經驗。雖然過去未曾直接使用過軟體開發工具，但從大學期間起，我便積極尋找能將專業知識與資訊軟體結合應用的學習機會，例如：
+                    </p>
+                        (1)考取電腦稽核軟體應用師(JCCP)證照，並加入系隊參賽全國電腦稽核競賽。<br>
+                        (2)選修SAP ERP課程，學習模組配置設定。 <br>
+                        (3)選修AWS網路架構實務課程，學習AWS雲端基礎設定及服務應用。 </br>
+                        <p>在審計工作中，時常需要整理大量的Excel檔案，進行複製貼上，並將來自不同來源的報表欄位數字進行勾稽(例如，銷售明細表中的銷售淨額加總應等於會計報表中的收入淨額)。確認資料的正確性後，再進行報表分析(例如，分析本期銷售金額較同期成長的原因，以及確認是否存在異常重大交易的可能)。為提高工作效率，我開始學習使用VBA處理和分析資料，並思考是否有其他方法改善作業流程。這種對更高效工作的追求激發了我對程式設計的興趣。</p>
+                        <p>真正讓我萌生轉職軟體工程師念頭的契機，源於我在擔任財會人員期間，參與了部門導入財報自編系統及機器人流程自動化(RPA)系統的專案。在專案過程中，由於財報自編系統並非客製化軟體，不夠使用者友善的操作介面和報表設定邏輯成了最讓人感到頭疼的部分。這讓我不禁思考，為何對會計人員來說直覺的報表邏輯，卻需要在系統中經過繁複的設定才能完成？是否是軟體設計上的限制？如果我是軟體工程師，是否能夠進行優化？此外，使用UiPath開發自動化流程的過程，也讓我體驗到了程式設計的樂趣。雖然只是簡單的程式編寫(如Python迴圈應用)，但這讓我意識到，原來自己也能從「使用者」轉變為「開發者」，能夠透過寫程式來提高工作效率並解決工作中的挑戰。
+                        </p>
+                        <p>當我回顧過往經歷，再次確信自己對資訊領域相關的知識與技能一直充滿興趣，只是未曾想過非資工科系背景也有機會能成為軟體工程師，故從未深入探究過。直到現在，我才發現缺乏的或許不是機會，而是是否能下定決心去投入學習。放棄穩定工作決定轉職，對我來說是一個充滿挑戰的選擇，但比起懷抱遺憾，這次我想為自己未來的職涯發展創造更多可能。</p>
+                    </div>
+                <li class="question">曾經做過哪些軟體工程技術相關的學習</li>
+                    <div class="content">
+                        <a style="cursor: pointer; color: blue;" target="_blank" href="https://drive.google.com/file/d/1otF2FOu3tD2_c8K4CPRUtD5Zy-jgGQ9Y/view?usp=sharing">AWS修課證明</a>
+                        <p>在學期間曾跨領域選修AWS網路架構實務課程，藉由課程學習AWS雲端基礎架設、服務應用，及如何繪製架構圖並進行成本估算，並與小組成員合作完成期末報告且取得結業證書。
+                        </p>
+                        <p>在科技業公司擔任財會人員期間，曾作為部門種子人員參與RPA導入專案，並由顧問公司授課指導UiPath的使用，學習如何透過內建功能及簡單的程式語言來進行自動化流程開發。</p>
+                    </div>
+                    
+                <li class="question">如果參與這個訓練，會怎麼安排學習時間？</li>
+                    <div class="content">
+                        <p>我將全職投入參與訓練，並按課程開始前後，初步安排學習計畫如下：
+                        </p>
+                        <p>(1) 課程開始前：補完彭彭老師提供的HTML、CSS、JavaScript和Python的入門課程，並安排一些模仿項目來練習實作，檢驗學習成果。
+                        </p>
+                        <p>課程開始後：每天填寫進度報告，記錄學習過程，並於每週任務完成後回顧當週報告，依實際狀況調整後續學習方式或時間安排。如有多餘時間，會進行更多實作練習以提升熟練度；或是練習LeetCode題目來測試自己對基礎概念的理解。</p>
+
+                    </div>
+                <li class="question">軟體技術日新月異，如何確定選擇投入的領域是正確有回報的？</li>
+                <div class="content">
+                    <p>「前端？後端？要先學什麼語言？這個語言將來好找工作嗎？」這是我決定開始轉職之路時面對的首要問題。即使已經詢問過身邊的工程師朋友，並參考了許多前輩的轉職心得，但作為軟體技術領域的初學者，我仍處於邊學邊摸索的階段，無法自信地確定自己的選擇是否正確。</p>
+                    <p> 雖然目前尚未找到明確的答案，但我認為無論選擇哪種程式語言作為開端，最重要的還是扎實地學習基礎，掌握核心思想(邏輯概念、設計模式等)，這才有助於日後能夠更快上手其他語言。從長期來看，可以透過觀察各行業的招聘需求來了解市場趨勢，並關注像Google、Microsoft、Meta等大型科技公司的技術發展，選擇具有長期潛力的領域。最終，記住「投資自己就是最好的投資」，只要不斷學習、調整方向，並保持對技術發展的敏感性，付出的努力必定會有所回報。                    </p>
+
+                </div>
+                <li class="question">請描述一件產生明顯負面情緒的經歷，如何處理該情緒？</li>
+                <div class="content">
+                    <p>剛從會計師事務所轉換到業界擔任財會人員的第一年，經主管指派接手導入財報自編系統的專案，負責完善系統設定(如資料來源、檔案匯出/匯入格式等)，並向部門同事宣導新的作業方式，確保能在時程內順利產出財報資訊，提供給會計師事務所查核。在專案進行過程中，我不得不不斷地與同事確認過往財報資訊的來源，以及報表編製邏輯的正確性。當時，儘管我擁有會計專業知識及事務所查帳經驗，但對部門同事而言，我依然是缺乏業界實務經驗的新人。因此，每當遇到疑問或發現問題時，往往首先面對同事的質疑，甚至聽到他們對改變既有作業方式的抱怨，這讓我感到無力，並對自己的能力產生懷疑，開始擔心無法如期完成專案。</p>    
+                    <p>雖然當時心情受到影響，但我仍努力保持平常心，專心做好分內工作，並將心中的不快留待下班後再消化。運動、聽音樂或看電影即是我釋放壓力、轉換心情的方式。冷靜下來後，我意識到這些情緒只是反映了我對工作的重視，與其被情緒困擾，不如重新檢視溝通過程中有無需要改進的地方，並思考如何更專業、更有說服力地表達自己。經過幾次的嘗試，我逐漸獲得同事的認同與信任，也學會以閒聊或玩笑的方式化解抱怨，最終順利完成專案。這次經歷讓我再次體會到「從容不迫地面對問題，並保持積極心態來解決問題」的重要，這樣才能從中學到更多。</p>
+                </div>
+                <li class="question">關於這份申請網頁，分享一個開發時的技術心得。</li>
+                <div class="content">
+                    <p>這是我第一個實作項目，在正式開始寫網頁前，我對於應該做到何種程度才能通過審查感到十分迷惘，也不確定自己在缺乏基礎的情況下能做到多少。最終，我決定盡力去做！於是，我參考了網路上的個人履歷網站範本，簡化設計，再加上自己想要的互動效果。過程中，每當遇到問題就靠著Google搜尋和ChatGPT等線上資源尋求解答，參考程式碼並應用，最終順利完成網頁。這份作業或許有不少語法不夠嚴謹或格式不對的地方，但這正是我未來需要持續學習並改進的不足之處。期許自己能在未來逐漸完善這個網站，讓它真正成為個人履歷上的第一個作品。</p>
+                </div>
+                <li class="question">如何看待自身工作和整個社會群體的連結關係？</li>
+                <div class="content">
+                    <p>過去無論是身為財會或審計人員，工作內容都不僅僅是單純的數字和報表。財會人員負責處理企業的財務資料，並編製成財務報告，提供給股東、員工、消費者等利害關係人，以便讓其了解公司的財務狀況及經營成果；審計人員則作為外部監督角色，運用審計方法對會計人員提供的財務資料進行查核，並對財務報表整體是否存在重大不實表達取得合理確信，從而增進社會大眾對企業財報的信任。兩者都應秉持職業道德，肩負保障投資者、消費者及其他利害關係人利益的責任。
+                        將來成為軟體工程師後，我希望能為他人提高工作效率、改善用戶生活。例如，結合會計背景，我可以開發針對小型企業的會計資訊系統及自動化報表生成工具，協助用戶提高工作效率，減少工作中的人工錯誤，進而提升整體生產力。此外，隨著科技及網路的發展，資安議題變得更加受到重視。這意味著軟體工程師在開發過程中應有責任考慮技術對社會的影響(如資料安全和用戶隱私的保護等)，避免對用戶造成風險。
+                        綜上所述，我認為無論是何種工作身份，都應遵守職業道德，並不斷地提升自身能力，才能對社會產生正面影響，為整體社會的發展貢獻力量。
+                        </p>
+                </div>
+                <li class="question">從上次提出申請至今，多做了哪些努力？( 第一次申請不用回答 )</li>
+                <div class="content"><p>無
+                </p></div>
+                <li class="question">其他想要對我們說的事情？</li>
+                <div class="content"><p>
+                    很高興能有這個機會申請本次WeHelp的工程師訓練營。在回答申請問題的過程中，我不僅重新審視了自己想轉職為軟體工程師的理由，也對轉職之路有了更明確的安排與規劃。最後，希望能成功收到錄取通知，我會不忘初衷，努力朝向目標前進。 
+                </p></div>
             </ul>
         </div>
            
         <div id="section2" style="display: none;">
-            <h3 >個人履歷 Resume</h3>
-            <div class="content">待更新</div>
+            
+            <div class="content">
+                <a style="display: inline-block; font-size: 23px;  margin-top:23px; cursor: pointer; color: blue;" target="_blank"   href="https://drive.google.com/file/d/1UOrjWlaU2phIheXtsijXYGQRILjn6YUX/view?usp=sharing">請點開此連結</a>
+            </div>
         </div>
         <div id="section3" style="display: none;">
-            <h3 id="">自我介紹 Video</h3>
-            <div class="content">待更新</div>
-            <div class="content">待更新</div>
-            <div class="content">待更新</div>
-            <div class="content">待更新</div>
-            <div class="content">待更新</div>
-            <div class="content">待更新</div>
-            <div class="content">待更新</div>
-            <div class="content">待更新</div>
-            <div class="content">待更新</div>
+            <div class="content">
+                <a style="display: inline-block; font-size: 23px;  margin-top:23px; cursor: pointer; color: blue;" target="_blank"   href="https://drive.google.com/file/d/1UOrjWlaU2phIheXtsijXYGQRILjn6YUX/view?usp=sharing">請點開此連結</a>
+            </div>
         </div>
         </div>
         </div>
