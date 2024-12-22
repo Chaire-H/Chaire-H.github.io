@@ -1,0 +1,100 @@
+body{background-color:#FCFCFC}
+table, th, td {
+    border:1px solid black;
+    border-collapse: collapse}
+.header{display:flex;
+       justify-content:center;
+       border-bottom:1px solid #D0D0D0}
+.title{
+    flex:none;
+    width:200px;
+    font-size:34px;
+    font-weight:bold;
+    text-align:center;}
+.all{
+    display:flex;
+    height:100%;}
+.sitebar{
+    background:#FFEEDD;
+    display:flex;
+    gap:20px;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    flex: 0 1 400px;}
+.userphoto{
+    height:200px;
+    width:200px;
+	border-radius:50%;
+	overflow:hidden;}
+.img{
+    display: block;
+	width:100%;
+    object-fit: cover;   }
+.slogan{
+        text-align:center;
+        font-size:24px;
+        font-weight:bold}
+.subslogan{
+    text-align:center;
+    font-size:20px}
+.main.content{
+    flex: 1 1 500px;
+    overflow-y:overlay;
+    padding: 50px 60px;
+    height:100%;
+    
+
+}
+.footer{}
+.name{
+    flex:none;
+    width:200px;
+    font-size:30px;
+    text-align:center;}
+.content{color: #303030}
+
+
+.activeBtn {
+    background-color: rgb(21, 170, 191);
+    color: white;
+    padding: 10px;
+    font-size: 22px;
+    cursor: pointer;
+    border: 1px solid rgb(21, 170, 191);;  /* 邊框顏色 */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* 添加陰影 */
+    border-radius: 10px
+}
+
+.activeBtn:hover {
+    background-color: rgb(16, 152, 173);
+    color: white;
+    padding: 10px;
+    font-size: 22px;
+    cursor: pointer;
+    border: 1px solid rgb(21, 170, 191);;  /* 邊框顏色 */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* 添加陰影 */
+    border-radius: 10px
+}
+
+.nonActiveBtn {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    font-size: 22px;
+    cursor: pointer;
+    border: 1px solid white;  /* 邊框顏色 */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* 添加陰影 */
+    border-radius: 10px
+}
+
+.nonActiveBtn:hover {
+    background-color: rgb(227, 227, 227);
+    color: black;
+    padding: 10px;
+    font-size: 22px;
+    cursor: pointer;
+    border: 1px;
+    border: 1px solid white;  /* 邊框顏色 */
+    border-radius: 10px
+}

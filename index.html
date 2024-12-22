@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>My first page</title>
+        <link rel="stylesheet" type="text/css" href="css-selector.css" />
+    </head>
+    <body>
+    <div >
+        <div class="header">
+            <div class="title">Applicant</div>
+            <div class="name">/</div>
+            <div class="name">陳立欣</div>
+        </div>
+        <div class="all" style="min-height: 900px;">
+        <div class="sitebar">
+            <div class="userphoto">
+                <img src="./image3.png" style="width:100%;" ="image">
+            </div>
+            <div class="name">陳立欣</div>
+            <div>
+                <div class="slogan">Hello</div>
+                <div class="subslogan">Here's who I am & what I do</div> 
+            </div>
+            
+        </div>
+
+
+        <div class="main.content" style="margin-left: 30px;">
+
+            <div style="margin-top:20px; ">
+                <button id="btn1" onclick="doSection1()" class="activeBtn">申請問答 Q & A</button>
+                <button id="btn2" onclick="doSection2()" class="nonActiveBtn">個人履歷 Resume</button>
+                <button id="btn3" onclick="doSection3()" class="nonActiveBtn">自我介紹 Video</button>
+            </div>
+
+
+            <div id="section1">
+            <h3 >申請問答 Q & A</h3>
+            <ul>
+                <li>個人簡介和申請動機</li>
+                    <div class="content">待更新</div>
+                <li>曾經做過哪些軟體工程技術相關的學習</li>
+                    <div class="content">待更新</div>
+                    <a href="https://drive.google.com/file/d/1otF2FOu3tD2_c8K4CPRUtD5Zy-jgGQ9Y/view?usp=sharing">AWS修課證明</a>
+                <li>如果參與這個訓練，會怎麼安排學習時間？</li>
+                    <div class="content">待更新</div>
+                    <table style="width:50%">
+                        <tr>
+                            <th style="width:10%">星期</th>
+                            <th style="width:10%">時段</th>
+                            <th>事項</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+                    </table>
+                <li>軟體技術日新月異，如何確定選擇投入的領域是正確有回報的？</li>
+                <div class="content">待更新</div>
+                <li>請描述一件產生明顯負面情緒的經歷，如何處理該情緒？</li>
+                <div class="content">待更新</div>
+                <li>關於這份申請網頁，分享一個開發時的技術心得。</li>
+                <div class="content">待更新</div>
+                <li>如何看待自身工作和整個社會群體的連結關係？</li>
+                <div class="content">待更新</div>
+                <li>從上次提出申請至今，多做了哪些努力？( 第一次申請不用回答 )</li>
+                <div class="content">待更新</div>
+                <li>其他想要對我們說的事情？</li>
+                <div class="content">待更新</div>
+            </ul>
+        </div>
+           
+        <div id="section2" style="display: none;">
+            <h3 >個人履歷 Resume</h3>
+            <div class="content">待更新</div>
+        </div>
+        <div id="section3" style="display: none;">
+            <h3 id="">自我介紹 Video</h3>
+            <div class="content">待更新</div>
+            <div class="content">待更新</div>
+            <div class="content">待更新</div>
+            <div class="content">待更新</div>
+            <div class="content">待更新</div>
+            <div class="content">待更新</div>
+            <div class="content">待更新</div>
+            <div class="content">待更新</div>
+            <div class="content">待更新</div>
+        </div>
+        </div>
+        </div>
+        <div class="clearfix"></div>
+
+
+
+
+        
+
+
+
+
+
+    </div>
+  
+    <script>
+        let btn1 = document.getElementById("btn1"); 
+        let btn2 = document.getElementById("btn2"); 
+        let btn3 = document.getElementById("btn3"); 
+        function hideElement(id) {
+            // 取得元素
+            let hele = document.getElementById(id);                
+            // 設定元素為隱藏
+            hele.style.display = "none";        
+        }
+
+        function displayElement(id) {
+            // 取得元素
+            let hele = document.getElementById(id);            
+            // 設定元素為隱藏
+            hele.style.display = "block";
+            
+        }   
+
+        function doSection1(){
+            hideElement("section2")
+            hideElement("section3")
+            displayElement("section1")
+
+
+           
+            btn1.classList.add("activeBtn")
+            btn1.classList.remove("nonActiveBtn")
+            btn2.classList.add("nonActiveBtn")
+            btn3.classList.add("nonActiveBtn")
+        }
+        function doSection2(){
+            hideElement("section1")
+            hideElement("section3")
+            displayElement("section2")
+            
+            btn2.classList.add("activeBtn")
+            btn2.classList.remove("nonActiveBtn")
+            btn1.classList.add("nonActiveBtn")
+            btn3.classList.add("nonActiveBtn")
+        }
+        function doSection3(){
+            hideElement("section1")
+            hideElement("section2")
+            displayElement("section3")
+            
+            btn3.classList.add("activeBtn")
+            btn3.classList.remove("nonActiveBtn")
+            btn1.classList.add("nonActiveBtn")
+            btn2.classList.add("nonActiveBtn")
+        }
+    </script>
+
+
+    </body>
+</html>
